@@ -31,10 +31,17 @@ yarn-error.*
 *.pem
 
 # local env files
+# `.env.example` is committed as documentation; real env files never are.
+.env
+.env.*
+!.env.example
 .env*.local
 
 # typescript
 *.tsbuildinfo
+
+# test output
+coverage/
 
 example
 
